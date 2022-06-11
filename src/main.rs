@@ -28,4 +28,14 @@ fn main() {
 
 
     println!("ia:{0}, ub: {1}, fc: {2}, bd: {3}, ce: {4}", ia, ub, fc, bd, ce);
+    test_func(1);
+    println!("b {0}", {
+        let a = 0;
+        a + 2
+    });
+}
+
+fn test_func (test_param: i128) -> i128 {
+    println!("testFunc {0}", test_param);
+    return test_param;
 }
